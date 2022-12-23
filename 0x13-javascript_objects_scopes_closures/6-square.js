@@ -13,4 +13,3 @@ module.exports = class Square extends Sqr {
     }
   }
 };
-
