@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-Fetches https://intranet.hbtn.io/status
-using the module requests
+Script fetches a response from a url
 """
+
 if __name__ == "__main__":
-    mport requests
-    r = requests.get('https://intranet.hbtn.io/status')
-    html = r.text
-    print('Body response:')
-    print("\t- type: {}".format(type(html)))
-    print("\t- content: {}".format(html))
+    import requests
+
+    res = requests.get("https://alx-intranet.hbtn.io/status")
+    print("Body response:")
+    print("\t- type: {}".format(type(res.text)))
+    print("\t- content: {}".format(res.text))
